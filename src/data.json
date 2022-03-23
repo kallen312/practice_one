@@ -20,5 +20,16 @@
         "favorite_colors": ["blue", "red"]
       }
     }
+  },
+  {
+    "person": {
+      "name": "Keturah",
+      "foods": ["sushi", "french fries", "pizza"],
+      "favorite_food_index": 1,
+      "best_friend": {
+        "name": "Bob",
+        "favorite_colors": ["black", "gold"]
+      }
+    }
   }
 ]

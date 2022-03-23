@@ -26,8 +26,24 @@ export default function App() {
       </p>
       <div> ------------- part 2--------------- </div>
       <p> Display both people information using .map()</p>
-      {/* use .map() to refactor for both people */}
-      {/* Refactor using .map */}
+      {data.map(function (people) {
+        return (
+          <div>
+            <p>Person: {people.person.name}</p>
+            <p>
+              Favorite food:{" "}
+              {people.person.foods[people.person.favorite_food_index]}{" "}
+            </p>
+            <p>Best friends name: {people.person.best_friend.name}</p>
+            <p>
+              Best friends favorite colors:
+              {people.person.best_friend.favorite_colors.map((color) => (
+                <p>{color}</p>
+              ))}{" "}
+            </p>
+          </div>
+        );
+      })}
     </div>
   );
 }
